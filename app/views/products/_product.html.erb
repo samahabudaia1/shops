@@ -5,7 +5,7 @@
         <h3  class="product"><%= product.name%></h3>
         <p class="product"><%= product.colour%></p>
         <p class="product"><%= product.description%></p>
-        <h3 class="product"><%= number_to_currency((product.price_in_cents), unit: "$") %></h3>
+        <h3 class="product"><%= number_to_currency((product.cost_in_cents), unit: "$") %></h3>
         <p class="actions product" ><%= link_to 'Show', product %> <%= link_to 'Edit', edit_product_path(product) %> <%= link_to 'Destroy', product, method: :delete, data:{ confirm: 'Are you sure?' } %>
           
 

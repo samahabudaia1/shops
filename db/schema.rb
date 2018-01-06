@@ -35,13 +35,10 @@ ActiveRecord::Schema.define(version: 20180105181230) do
     t.string "name"
     t.text "description"
     t.string "image_url"
-    t.integer "price"
-    t.integer "price_in_cents"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "colour"
     t.string "cost_in_cents"
-    t.string "decimal"
   end
 
   create_table "users", force: :cascade do |t|
